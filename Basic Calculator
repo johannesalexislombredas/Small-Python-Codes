@@ -1,0 +1,24 @@
+# Write code below 💖
+
+print('CALCULATOR')
+print('Addition [1] Subtraction [2] Multiplication [3] Divisiion [4] Percentage [5]')
+
+a = int(input('First Number: '))
+b = int(input('Second Number: ')) 
+
+Choice = int(input('Choice= '))
+
+if Choice == 1:
+  Answer = a + b
+elif Choice == 2:
+  Answer = a - b
+elif Choice == 3:
+  Answer = a * b
+elif Choice == 4:
+  Answer = a / b
+elif Choice == 5:
+  Answer = ((a / 100 )* b)
+else:
+  print('Error')
+
+print('The Asnwer: ', Answer)
