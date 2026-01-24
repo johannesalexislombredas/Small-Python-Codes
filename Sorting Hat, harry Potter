@@ -1,0 +1,80 @@
+# Write code below 💖
+
+Gry = 0
+Rav = 0
+Huf = 0
+Sly = 0
+
+#First Question
+print('Q1) Do you like Dawn or Dusk?')
+print('    1) Dawn')
+print('    2) Dusk')
+A = int(input("Answer: "))
+
+if A == 1:
+  Gry += 1
+  Rav += 1
+elif A == 2:
+  Huf += 1
+  Sly += 1
+else:
+  print('Wrong Input')
+
+#Second Question
+print('Q2) When I’m dead, I want people to remember me as:')
+print('    1) The Good')
+print('    2) The Great')
+print('    3) The Wise')
+print('    4) The Bold')
+A = int(input("Answer: "))
+
+if A == 1:
+  Huf += 2
+elif A == 2:
+  Sly += 2
+elif A == 3:
+  Rav += 2
+elif A == 4:
+  Gry += 2
+else:
+  print('Wrong Input')
+
+#Third Question
+print('Q3) Which kind of instrument most pleases your ear?')
+print('    1) The violin')
+print('    2) The trumpet')
+print('    3) The piano')
+print('    4) The drum')
+A = int(input("Answer: ")) 
+
+if A == 1:
+  Sly += 4
+elif A == 2:
+  Huf += 4
+elif A == 3:
+  Rav += 4
+elif A == 4:
+  Gry += 4
+else:
+  print('Wrong input')
+
+print('🦁 Gryffindor: ', Gry)
+print('🦅 Ravenclaw: ', Rav)
+print('🦡 Hufflepuff: ', Huf)
+print('🐍 Slytherin', Sly)
+
+if Gry > Rav and Gry > Huf and Gry > Sly:
+  print('House with most points: 🦁 Gryffindor' )
+elif Rav > Huf and Rav > Sly:
+  print('House with most points: 🦁 Ravenclaw' )
+elif Huf > Sly:
+  print('House with most points: 🦁 Hufflepuff' )
+else:
+  print('House with most points: 🦁 Slytherin' )
+
+
+
+
+
+
+
