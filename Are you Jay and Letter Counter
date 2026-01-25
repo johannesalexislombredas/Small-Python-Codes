@@ -1,0 +1,35 @@
+import random
+
+Intro = str(input("What's Your name? "))
+
+Greet = random.randint(1, 5)
+
+if Greet == 1:
+    print("Hi " + Intro)
+elif Greet == 2:
+    print("Hey " + Intro)
+elif Greet == 3:
+    print("Hello " + Intro)
+elif Greet == 4:
+    print("What’s up, " + Intro)
+elif Greet == 5:
+    print("Hey there " + Intro)
+else:
+    print("Error" + Intro)
+
+IntroI = input("What can i do for you? ")
+
+if Greet == 1:
+    print("With what? ")
+elif Greet == 2:
+    print("About what? ")
+elif Greet == 3:
+    print("What kind of help? ")
+elif Greet == 4:
+    print("Sure. ")
+elif Greet == 5:
+    print("Okay? ")
+else:
+    print("Error")
+
+print(Greet)
