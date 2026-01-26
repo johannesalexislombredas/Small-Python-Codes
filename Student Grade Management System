@@ -1,0 +1,79 @@
+
+''' Notes
+1st Input the Grades
+2nd Calculate Grades
+3rd Output the Sum and convert to gpa and over all gpa
+4th Output if the Student Fail or Passed
+'''
+from idlelib.history import History
+
+#Name
+print("--------------------------------------------------")
+SName = input("What's your name: ")
+CName = input("What is your Course: ")
+
+#Subjects
+print("--------------------------------------------------")
+Art     = int(input('Arts               :'))
+English = int(input('English            :'))
+History = int(input('History            :'))
+PE      = int(input('Physical Education :'))
+Math    = int(input('Mathematics        :'))
+Science = int(input('Science            :'))
+Writing = int(input('Writing            :'))
+
+#Passing
+print("--------------------------------------------------")
+def check(subject, grade):
+    if grade >= 75:
+        print(f"{subject}: Passed")
+        if grade >= 90:
+            print(f"GPA {subject}: 4.0 \n")
+        elif grade >= 85:
+            print(f"GPA {subject}: 3.5 \n")
+        elif grade >= 80:
+            print(f"GPA {subject}: 3.0 \n")
+        elif grade >= 75:
+            print(f"GPA {subject}: 2.0 \n")
+        else:
+            print(f"GPA {subject}: 1.0 \n")
+    elif grade < 75:
+        print(f"{subject}: Failed")
+        print(f"GPA {subject}: 1.0 \n")
+    else:
+        print("Error")
+
+check("Arts", Art)
+check("English", English)
+check("History", History)
+check("Physical Education", PE)
+check("Mathematics", Math)
+check("Science", Science)
+check("Writing", Writing)
+
+
+
+#Computation
+Sum = (Art + English + History + PE + Math + Science + Writing) / 7
+
+#Output
+print("--------------------------------------------------")
+print(f"Name: {SName}")
+print(f"Course: {CName}")
+print(f"Average: {Sum:.2f}")
+
+def check2(gpa, Sums):
+    if Sums > 90:
+        print(f"{gpa}: 4.0")
+    elif Sums > 85:
+        print(f"{gpa}: 3.5")
+    elif Sums > 80:
+        print(f"{gpa}: 3.0")
+    elif Sums > 75:
+         print(f"{gpa}: 2.0")
+    else:
+         print(f"{gpa}: 1.0")
+
+check("GPA", Sum)
+#Output
+print("--------------------------------------------------")
